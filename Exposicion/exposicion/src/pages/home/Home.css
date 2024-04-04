@@ -1,0 +1,11 @@
+.home-intro{
+    width: 100vw;
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+}
+
+.home-intro img{
+    width: 100vw;
+    height: 100vh;
+}
