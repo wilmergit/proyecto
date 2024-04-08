@@ -1,0 +1,11 @@
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.gallery-container img{
+    border-radius: 2%;
+    margin-bottom: 1em;
+    height: 280px;
+}

@@ -1,0 +1,71 @@
+.home-intro{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home-header-title{
+    margin: 2em;
+}
+
+.slogan{
+    position: absolute;
+    color: rgb(255, 3, 3);
+    font-size: xx-large;
+    font-family: "Caprasimo", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    width: 130px;
+    top: 35%;
+    background-color: unset;
+}
+
+h1{
+    color: rgb(249, 219, 187);
+    font-size: medium;
+    font-family: "Stick No Bills", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    background-color: unset;
+}
+
+
+
+.fondo{
+    filter: blur(2px);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.home-header{
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+
+}
+
+.home-header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    margin: .5em;
+}
+
+.home-header-options{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1em;
+    gap: 1.5em;
+    background-color: unset;
+
+}
+
