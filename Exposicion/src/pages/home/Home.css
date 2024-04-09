@@ -6,12 +6,18 @@
 }
 
 .home-header-title{
-    margin: 2em;
+    margin: 1em;
+    background: unset;
+    font-family: "Caprasimo", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(249, 219, 187);
+    font-size: larger;
 }
 
 .slogan{
     position: absolute;
-    color: rgb(255, 3, 3);
+    color: rgb(249, 219, 187);
     font-size: xx-large;
     font-family: "Caprasimo", serif;
     font-weight: 600;
@@ -21,17 +27,6 @@
     top: 35%;
     background-color: unset;
 }
-
-h1{
-    color: rgb(249, 219, 187);
-    font-size: medium;
-    font-family: "Stick No Bills", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    background-color: unset;
-}
-
-
 
 .fondo{
     filter: blur(2px);
@@ -49,7 +44,7 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: none;
+    background: unset;
 
 }
 
@@ -58,14 +53,5 @@ h1{
     height: 60px;
     border-radius: 10%;
     margin: .5em;
-}
-
-.home-header-options{
-    display: flex;
-    flex-direction: row;
-    margin-right: 1em;
-    gap: 1.5em;
-    background-color: unset;
-
 }
 
