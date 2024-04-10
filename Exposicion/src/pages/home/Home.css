@@ -45,6 +45,7 @@
     align-items: center;
     justify-content: space-between;
     background: unset;
+    z-index: 100;
 
 }
 
