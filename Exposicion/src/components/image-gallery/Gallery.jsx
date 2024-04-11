@@ -2,7 +2,7 @@ import "./Gallery.css"
 
 function Gallery(){
     return (
-        <div className="gallery-carousel next">
+        <div className="gallery-carousel">
             <div className="carousel-list">
                 <div className="list-item">
                     <img src="./images/sphinx.jpg" alt="sphinx" />
@@ -60,6 +60,7 @@ function Gallery(){
                     <button id="prev">{'<'}</button>
                     <button id="next">{'>'}</button>
                 </div>
+                <div className="time"></div>
             </div>
         </div>
     )

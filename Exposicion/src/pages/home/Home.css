@@ -3,6 +3,7 @@
     height: 50vh;
     display: flex;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .home-header-title{

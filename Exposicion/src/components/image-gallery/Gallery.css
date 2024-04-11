@@ -30,6 +30,8 @@
     color: white;
     text-shadow: 0 5px 10px black;
     background: unset;
+    font-family: "Caprasimo", serif;
+
 }
 
 .list-item .item-content .item-description{
@@ -45,7 +47,7 @@
 .list-item .item-content .item-title,
 .list-item .item-content .item-category{
     font-weight: bold;
-    font-size: 5em;
+    font-size: 3em;
     line-height: 1.3em;
     background: unset;
 }
@@ -69,6 +71,7 @@
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    border-radius: 7px;
 }
 
 .item-content button:nth-child(2){
@@ -108,7 +111,6 @@
 .thumbnail .list-item .item-content{
     position:absolute;
     bottom:10px;
-    left: 10px;
     right: 10px;
     background: unset;
 }
@@ -192,6 +194,8 @@
 
 /*CLICK EFFECTS*/
 
+/*NEXt*/
+
 .gallery-carousel.next .carousel-list .list-item:nth-child(1) img{
     width: 150px;
     height: 220px;
@@ -232,5 +236,77 @@
 @keyframes transformThumbnail{
     to{
         transform: translateX(0);
+    }
+}
+
+/*PREV*/
+
+.gallery-carousel.prev .carousel-list .list-item:nth-child(2){
+    z-index: 2;
+}
+
+.gallery-carousel.prev .carousel-list .list-item:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage 0.5s linear 1 forwards;
+}
+
+@keyframes outImage{
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+    }
+}
+
+.gallery-carousel.prev .thumbnail .list-item:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.gallery-carousel.prev .carousel-list .list-item:nth-child(2) .item-author,
+.gallery-carousel.prev .carousel-list .list-item:nth-child(2) .item-title,
+.gallery-carousel.prev .carousel-list .list-item:nth-child(2) .item-description,
+.gallery-carousel.prev .carousel-list .list-item:nth-child(2) .item-category,
+.gallery-carousel.prev .carousel-list .list-item:nth-child(2) .buttons{
+    animation: contentOut 1.5s linear 1 forwards;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.gallery-carousel.next .arrows button,
+.gallery-carousel.prev .arrows button{
+    pointer-events: none;
+}
+
+/*TIME*/
+
+.time{
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.gallery-carousel.next .time,
+.gallery-carousel.prev .time{
+    width: 100%;
+    animation: timeRunning 2s linear 1 forwards;
+}
+
+@keyframes timeRunning{
+    to{
+        width: 0;
     }
 }
