@@ -1,0 +1,51 @@
+.body-content {
+    margin-top: 1em;
+    padding: 0 14%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+.about img{
+    margin-left: 4em; 
+}
+
+.about h5 {
+    margin-top: 1em;
+    color: rgb(131, 111, 255);
+    font-size: xx-large;
+    letter-spacing: 1.6px;
+}
+
+.about p {
+    margin-top: 1em;
+    font-size: large;
+}
+
+.explanation{
+    margin-top: 1em;
+    padding: 0 14%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.explanation h5{
+    font-weight: 600;
+    font-size: 43px;
+    letter-spacing: 2px;
+    color: #40c9ff;
+}
+
+.explanation p{
+    text-align: center;
+    font-size: 28px;
+}

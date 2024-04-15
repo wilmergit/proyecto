@@ -1,0 +1,39 @@
+.seller-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.seller-content p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.seller-content img{
+    margin-top: 2em;
+    margin-left: 5em;
+}
+
+.one p{
+    background-image: linear-gradient(to right, #5a58e4, #40c9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.two p{
+    margin-top: 1em;
+    background-image: linear-gradient(to right, #5a58e4, #40c9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.three img{
+    margin-left: 6em;
+}
+
+.three p{
+    margin-top: 1em;
+    background-image: linear-gradient(to right, #5a58e4, #40c9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}

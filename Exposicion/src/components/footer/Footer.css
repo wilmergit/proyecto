@@ -1,0 +1,22 @@
+.footer-content{
+    margin-top: 2em;
+    padding: 0 14%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    background-color: rgb(33, 25, 81);
+    border-radius: 17px 17px 0 0;
+}
+
+.links{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a{
+    color: white;
+}
