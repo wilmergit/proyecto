@@ -2,7 +2,7 @@ import "./Stt.css";
 
 function Stt(){
     return (
-        <a href="#home" className="stt" title="scroll to top"></a>
+        <a href="#" className="stt" title="scroll to top"></a>
     )
 }
 

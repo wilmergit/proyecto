@@ -1,4 +1,7 @@
+import Body from "../../components/body/Body";
+import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import Socials from "../../components/socials/Socials";
 import "./Home.css"
 
 function Home(){
@@ -13,19 +16,16 @@ function Home(){
                         use it as you wish.
                     </p>
                     <div className="main-button">
-                        <a href="#" className="btn">Begin now</a>
+                        <a href="#begin" className="btn">Begin now</a>
                     </div>
                 </div>
                 <div className="main-img">
                     <img src="./images/home.jpeg" alt="home" />
                 </div>
             </div>
-
-            <div className="icons">
-                <a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a>
-                <a href="https://twitter.com/"><i class="ri-twitter-x-line"></i></a>
-                <a href="https://github.com/wilmergit"><i class="ri-github-fill"></i></a>
-            </div>
+            <Body/>
+            <Footer/>
+            <Socials/>
         </>
     )
 }

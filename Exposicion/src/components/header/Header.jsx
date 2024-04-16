@@ -4,12 +4,12 @@ function Header(){
     return (
         <div className="header">
             <a href="#" className="header-logo">
-                <img src="./images/logo.png" alt="logo" />
+                <img src="./images/Heaven.png" alt="logo" />
             </a>
             <ul className="header-navbar">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </div>
     )

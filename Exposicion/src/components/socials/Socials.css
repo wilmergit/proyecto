@@ -1,0 +1,23 @@
+.icons{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    padding: 0 7%;
+    transform: translateY(10px);
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+.icons i{
+    display: block;
+    margin: 30px 0;
+    color: white;
+    font-size: 20px;
+    transition: all .6s ease;
+}
+
+.icons i:hover{
+    transform: translateY(-5px);
+    color: rgb(255, 77, 0);
+}
