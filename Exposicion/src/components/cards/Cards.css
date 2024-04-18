@@ -87,9 +87,11 @@
     color: black;
 }
 
+/*
 .card p:not(.heading) {
     font-size: 14px;
 }
+*/
 
 .card:hover::after {
     filter: blur(30px);
