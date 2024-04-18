@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 2em;
+    gap: 1em;
     border-radius: 17px 17px 0 0;
     box-shadow: 0 -5px 80px -5px rgb(165, 151, 253);
 }
@@ -20,7 +20,7 @@ img{
 .content{
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 5em;
 }
 
 .links{
@@ -38,7 +38,7 @@ img{
 
 .footer-icons{
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 38%;
     transform: translateY(10px);
     display: flex;

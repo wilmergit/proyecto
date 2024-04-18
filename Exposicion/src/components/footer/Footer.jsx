@@ -16,8 +16,10 @@ function Footer() {
                 <a href="https://github.com/wilmergit"><i class="ri-github-fill"></i></a>
             </div>
             <p>
-                Todos los derechos reservados Política de Privacidad y Cookies |
-                Condiciones de Venta
+                All rigths reserved
+            </p>
+            <p>
+               Cookies | Privacy
             </p>
             <p>© 2024 Heaven</p>
         </div>
