@@ -1,0 +1,75 @@
+.seller-content{
+    display: flex;
+    margin-top: 8em;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+
+.seller-content p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.one p{
+    background-image: linear-gradient(to right, #5a58e4, #40c9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.two p{
+    margin-top: 1em;
+    background-image: linear-gradient(to right, #5a58e4, #40c9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.three p{
+    margin-top: 1em;
+    background-image: linear-gradient(to right, #5a58e4, #40c9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.four p{
+    margin-top: 1em;
+    background-image: linear-gradient(to right, #5a58e4, #40c9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}

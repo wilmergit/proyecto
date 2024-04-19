@@ -1,0 +1,29 @@
+.privacy-body{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0 14%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    margin-bottom: 3em;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1{
+    color: #40c9ff;
+}
+
+h2{
+    color: rgb(131, 111, 255) ;
+}
+
+.list{
+    background-image: linear-gradient(to right, rgb(131, 111, 255), rgb(74, 221, 231));
+    -webkit-background-clip: text;
+    color: transparent;
+}
