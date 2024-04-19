@@ -1,10 +1,9 @@
-import "./Seller.css";
+import "./Selling.css";
 
-function Seller() {
+function Selling() {
     return (
         <div className="seller-content">
-            <p>If you want to buy then thats it.</p>
-            <p>But if you want to sell follow these steps:</p>
+            <h1>For the sellers</h1>
             <div className="membership" id="membership">
                 <div className="one">
                     <p>
@@ -20,6 +19,12 @@ function Seller() {
                 </div>
                 <div className="three">
                     <p>
+                        - Fill up the information
+                    </p>
+                    <img src="./images/documents.gif" alt="complete"/>
+                </div>
+                <div className="four">
+                    <p>
                         - Complete the transaction
                     </p>
                     <img src="./images/transaction.gif" alt="complete"/>
@@ -29,4 +34,4 @@ function Seller() {
     )
 }
 
-export default Seller;
+export default Selling;

@@ -5,6 +5,10 @@
     gap: 2em;
 }
 
+.buttons a{
+    color: #40c9ff;
+}
+
 button {
     --glow-color: #40c9ff;
     --glow-spread-color: #319ac4;

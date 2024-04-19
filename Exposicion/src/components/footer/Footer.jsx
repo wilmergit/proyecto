@@ -18,9 +18,10 @@ function Footer() {
             <p>
                 All rigths reserved
             </p>
-            <p>
-               Cookies | Privacy
-            </p>
+            <div>
+                <a href="/cookiesAndPrivacy#cookies">Cookies |</a>
+                <a href="/cookiesAndPrivacy#privacy"> Privacy</a>
+            </div>
             <p>© 2024 Heaven</p>
         </div>
     )

@@ -20,7 +20,7 @@ function ImageList() {
     return (
         <>
 
-            <div className="imageList-container">
+            <div className="imageList-container" id="images">
                 {
                     photos.map((photo, index) => (
                         <>

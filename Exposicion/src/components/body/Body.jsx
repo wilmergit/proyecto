@@ -1,7 +1,6 @@
 import Buttons from "../buttons/Buttons";
 import Cards from "../cards/Cards";
 import ImageList from "../imageList/ImageList";
-import Seller from "../seller/Seller";
 import Stt from "../stt/Stt";
 import "./Body.css";
 
@@ -36,7 +35,6 @@ function Body(){
                     <ImageList/>
                 </div>
                 <Cards/>
-                <Seller/>
             </div>
             <Stt/>
         </>

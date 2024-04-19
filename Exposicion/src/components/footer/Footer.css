@@ -12,6 +12,10 @@
     box-shadow: 0 -5px 80px -5px rgb(165, 151, 253);
 }
 
+a{
+    color: white;
+}
+
 img{
     width: 200;
     height: 200px;
