@@ -6,8 +6,8 @@ function Footer() {
             <div className="content">
                 <img src="./images/Heaven.png" alt="logo" />
                 <div className="links">
-                    <a href="#about">About us</a>
-                    <a href="#contact">Contact</a>
+                    <a href="/home#about">About us</a>
+                    <a href="/home#contact">Contact</a>
                 </div>
             </div>
             <div className="footer-icons">

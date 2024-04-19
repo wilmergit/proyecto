@@ -62,3 +62,21 @@ img{
     transform: translateY(-5px);
     color: rgb(255, 77, 0);
 }
+
+@media only screen and (min-width: 600px){
+    .footer-icons{
+        left: 42%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .footer-icons{
+        left: 45%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .footer-icons{
+        left: 48%;
+    }
+}
