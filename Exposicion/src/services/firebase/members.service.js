@@ -6,7 +6,7 @@ const refMembers = ref(db, "/members");
 const getAllMembers = ref(db, "/members");
 
 const getMembers = () => {
-
+    return get(getAllMembers);
 }
 
 const addMember = (name, nickname, email, date) => {
@@ -20,5 +20,6 @@ const addMember = (name, nickname, email, date) => {
 
 export default {
     getAllMembers,
-    addMember
+    addMember,
+    getMembers
 }

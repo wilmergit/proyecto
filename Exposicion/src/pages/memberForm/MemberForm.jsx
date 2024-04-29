@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import "./MemberForm.css";
@@ -10,7 +10,7 @@ function MemberForm() {
     const [nickname, setNickname] = useState("");
     const [email, setEmail] = useState("");
     const [date, setDate] = useState("");
-    const[members, setMembers] = useState([]);
+    const [members, setMembers] = useState([]);
 
     const changeName = (a) => {
         setName(a.target.value)
@@ -35,10 +35,28 @@ function MemberForm() {
     }
 
     const saveMember = (name, nickname, email, date) => {
-        MemberService.addNewMember(name, nickname, email, date).then((response) => {
-            console.log("guardado")
+        MemberService.addMember(name, nickname, email, date).then((response) => {
+            let auxMembers = [];
+            items.forEach((item) => {
+                const key = item.key;
+                const data = item.val();
+
+                const auxMember = {
+                    key : key,
+                    name : data.name,
+                    nickname : data.nickname,
+                    email : data.email,
+                    date : data.date
+                }
+                auxMembers.push(auxMember);
+            })
+            setMembers([...auxMembers]);
         })
     }
+
+    useEffect(() => {
+        saveMember();
+    }, [])
 
     return (
         <>
