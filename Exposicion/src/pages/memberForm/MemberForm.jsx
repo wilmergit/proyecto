@@ -5,7 +5,7 @@ import "./MemberForm.css";
 import MemberService from "../../services/firebase/members.service.js"
 
 function MemberForm() {
-    
+
     const [name, setName] = useState("");
     const [nickname, setNickname] = useState("");
     const [email, setEmail] = useState("");
@@ -27,35 +27,41 @@ function MemberForm() {
     const changeDate = (a) => {
         setDate(a.target.value)
     }
-    
+
     const addNewMember = (a) => {
         a.preventDefault();
-        saveMember(a.target.name.value, a.target.nickname.value, 
+        saveMember(a.target.name.value, a.target.nickname.value,
             a.target.email.value, a.target.date.value)
     }
 
     const saveMember = (name, nickname, email, date) => {
         MemberService.addMember(name, nickname, email, date).then((response) => {
+            console.log("Guardado.")
+        })
+    }
+
+    const getAllMembers = () => {
+        MemberService.getMembers().then((items) => {
             let auxMembers = [];
             items.forEach((item) => {
                 const key = item.key;
                 const data = item.val();
 
                 const auxMember = {
-                    key : key,
-                    name : data.name,
-                    nickname : data.nickname,
-                    email : data.email,
-                    date : data.date
+                    key: key,
+                    name: data.name,
+                    nickname: data.nickname,
+                    email: data.email,
+                    date: data.date
                 }
                 auxMembers.push(auxMember);
             })
             setMembers([...auxMembers]);
-        })
+        });
     }
 
     useEffect(() => {
-        saveMember();
+        getAllMembers();
     }, [])
 
     return (
@@ -63,13 +69,13 @@ function MemberForm() {
             <Header />
             <form onSubmit={addNewMember}>
                 <label htmlFor="name">Name: </label>
-                <input type="text" id="name" name="name" value={name} onChange={changeName}/>
+                <input type="text" id="name" name="name" value={name} onChange={changeName} />
                 <label htmlFor="nickname">Nickname: </label>
-                <input type="text" id="nickname" name="nickname" value={nickname} onChange={changeNick}/>
+                <input type="text" id="nickname" name="nickname" value={nickname} onChange={changeNick} />
                 <label htmlFor="email">Email: </label>
-                <input type="email" id="email" name="email" value={email} onChange={changeEmail}/>
+                <input type="email" id="email" name="email" value={email} onChange={changeEmail} />
                 <label htmlFor="date">Birth date: </label>
-                <input type="date" id="date" name="date" value={date} onChange={changeDate}/>
+                <input type="date" id="date" name="date" value={date} onChange={changeDate} />
 
                 <button type="submit">Become a member</button>
             </form>
