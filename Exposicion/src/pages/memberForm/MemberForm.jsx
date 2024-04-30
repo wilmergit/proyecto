@@ -29,7 +29,6 @@ function MemberForm() {
     }
 
     const addNewMember = (a) => {
-        a.preventDefault();
         saveMember(a.target.name.value, a.target.nickname.value,
             a.target.email.value, a.target.date.value)
     }
