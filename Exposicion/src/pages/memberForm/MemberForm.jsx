@@ -1,28 +1,85 @@
+import { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import "./MemberForm.css";
+import MemberService from "../../services/firebase/members.service.js"
 
 function MemberForm() {
+    
+    const [name, setName] = useState("");
+    const [nickname, setNickname] = useState("");
+    const [email, setEmail] = useState("");
+    const [date, setDate] = useState("");
+    const [members, setMembers] = useState([]);
+
+    const changeName = (a) => {
+        setName(a.target.value)
+    }
+
+    const changeNick = (a) => {
+        setNickname(a.target.value)
+    }
+
+    const changeEmail = (a) => {
+        setEmail(a.target.value)
+    }
+
+    const changeDate = (a) => {
+        setDate(a.target.value)
+    }
+    
+    const addNewMember = (a) => {
+        a.preventDefault();
+        saveMember(a.target.name.value, a.target.nickname.value, 
+            a.target.email.value, a.target.date.value)
+    }
+
+    const saveMember = (name, nickname, email, date) => {
+        MemberService.addMember(name, nickname, email, date).then((response) => {
+            let auxMembers = [];
+            items.forEach((item) => {
+                const key = item.key;
+                const data = item.val();
+
+                const auxMember = {
+                    key : key,
+                    name : data.name,
+                    nickname : data.nickname,
+                    email : data.email,
+                    date : data.date
+                }
+                auxMembers.push(auxMember);
+            })
+            setMembers([...auxMembers]);
+        })
+    }
+
+    useEffect(() => {
+        saveMember();
+    }, [])
+
     return (
         <>
             <Header />
-            <div className="memberForm-container">
-                <div className="memberForm-form">
-                    <div className="inputs">
-                        <input type="text" placeholder="Nombre" />
-                        <input type="text" placeholder="Primer Apellido" />
-                        <input type="text" placeholder="Segundo Apellido" />
-                        <input type="number" placeholder="Edad"/>
-                        <input type="text" placeholder="Correo electronico" />
-                    </div>
-                    <div className="joinButton">
-                        <button>Join Heaven</button>
-                    </div>
-                </div>
-                <div className="image">
-                    <img src="./images/member.gif" alt="member" />
-                </div>
-            </div>
+            <form onSubmit={addNewMember}>
+                <label htmlFor="name">Name: </label>
+                <input type="text" id="name" name="name" value={name} onChange={changeName}/>
+                <label htmlFor="nickname">Nickname: </label>
+                <input type="text" id="nickname" name="nickname" value={nickname} onChange={changeNick}/>
+                <label htmlFor="email">Email: </label>
+                <input type="email" id="email" name="email" value={email} onChange={changeEmail}/>
+                <label htmlFor="date">Birth date: </label>
+                <input type="date" id="date" name="date" value={date} onChange={changeDate}/>
+
+                <button type="submit">Become a member</button>
+            </form>
+
+            {
+                members.map((m, index) => (
+                    <p key={index}>{m.name} {m.nickname} {m.email} {m.date}</p>
+                ))
+            }
+
             <Footer />
         </>
     )
