@@ -1,11 +1,11 @@
-import { get, push, ref } from "firebase/database";
+import { get, push, ref, remove } from "firebase/database";
 import db from "./firebase.config.js";
 
 const refMembers = ref(db, "/members");
 
 const getMembers = () => {
     return get(refMembers);
-}
+};
 
 const addMember = (name, nickname, email, date) => {
     return push(refMembers, {
@@ -13,10 +13,16 @@ const addMember = (name, nickname, email, date) => {
         nickname: nickname,
         email: email,
         date: date
-    })
-}
+    });
+};
+
+const removeMember = (key) => {
+    const dbRefMember = ref(db, `/members/${key}`);
+    return remove(dbRefMember);
+};
 
 export default {
     addMember,
-    getMembers
-}
+    getMembers,
+    removeMember,
+};

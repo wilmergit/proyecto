@@ -34,6 +34,12 @@ function MemberForm() {
             a.target.email.value, a.target.date.value)
     }
 
+    const removeMember = (key) => {
+        MemberService.removeMember(key).then((res) => {
+            getAllMembers();
+        });
+    }
+
     const saveMember = (name, nickname, email, date) => {
         MemberService.addMember(name, nickname, email, date).then((response) => {
             console.log("Guardado.")
@@ -80,11 +86,17 @@ function MemberForm() {
                 <button type="submit">Become a member</button>
             </form>
 
-            {
-                members.map((m, index) => (
-                    <p key={index}>{m.name} {m.nickname} {m.email} {m.date}</p>
-                ))
-            }
+            <div className="members-container">
+                {
+
+                    members.map(m =>
+                        <div className="member-item" key={m.key}>
+                            <p><img src="./images/Heaven.png" alt="usu" /><span>User:</span> {m.nickname} <span>Email:</span> {m.email}</p>
+                            <button className="delete-member" onClick={() => removeMember(m.key)}>Delete</button>
+                        </div>
+                    )
+                }
+            </div>
 
             <Footer />
         </>
