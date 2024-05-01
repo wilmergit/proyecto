@@ -11,6 +11,7 @@ function MemberForm() {
     const [email, setEmail] = useState("");
     const [date, setDate] = useState("");
     const [members, setMembers] = useState([]);
+    const [editingIndex, setEditingIndex] = useState(-1);
 
     const changeName = (a) => {
         setName(a.target.value)
@@ -33,7 +34,8 @@ function MemberForm() {
             a.target.email.value, a.target.date.value)
     }
 
-    const removeMember = (key) => {
+    const removeMember = (key, index) => {
+        setEditingIndex(-1);
         MemberService.removeMember(key).then((res) => {
             getAllMembers();
         });
@@ -43,6 +45,26 @@ function MemberForm() {
         MemberService.addMember(name, nickname, email, date).then((response) => {
             console.log("Guardado.")
         })
+    }
+
+
+    const editMember = (index) => {
+        setEditingIndex(index);
+        const member = members[index];
+        setName(member.name);
+        setNickname(member.nickname);
+        setEmail(member.email);
+        setDate(member.date);
+    }
+
+    const updateMember = () => {
+        if (editingIndex !== -1) {
+            const member = members[editingIndex];
+            MemberService.updateMember(member.key, name, nickname, email, date).then(() => {
+                getAllMembers();
+                setEditingIndex(-1);
+            });
+        }
     }
 
     const getAllMembers = () => {
@@ -82,16 +104,23 @@ function MemberForm() {
                 <label htmlFor="date">Birth date: </label>
                 <input type="date" id="date" name="date" value={date} onChange={changeDate} />
 
-                <button type="submit">Become a member</button>
+                {editingIndex === -1 ? (
+                    <button type="submit">Become a member</button>
+                ) : (
+                    <button type="button" onClick={updateMember}>Save changes</button>
+                )}
             </form>
 
             <div className="members-container">
                 {
 
-                    members.map(m =>
+                    members.map((m, index) =>
                         <div className="member-item" key={m.key}>
                             <p><img src="./images/Heaven.png" alt="usu" /><span>User:</span> {m.nickname} <span>Email:</span> {m.email}</p>
-                            <button className="delete-member" onClick={() => removeMember(m.key)}>Delete</button>
+                            <div className="buttons">
+                                <button className="delete-member" onClick={() => removeMember(m.key, index)}>Delete</button>
+                                <button className="edit-member" onClick={() => editMember(index)}>Edit</button>
+                            </div>
                         </div>
                     )
                 }
