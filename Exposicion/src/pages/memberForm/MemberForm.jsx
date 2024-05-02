@@ -94,6 +94,7 @@ function MemberForm() {
     return (
         <>
             <Header />
+            <h1 id="form-h1">Enjoy the heaven..</h1>
             <form onSubmit={addNewMember}>
                 <label htmlFor="name">Name: </label>
                 <input type="text" id="name" name="name" value={name} onChange={changeName} />
@@ -105,9 +106,9 @@ function MemberForm() {
                 <input type="date" id="date" name="date" value={date} onChange={changeDate} />
 
                 {editingIndex === -1 ? (
-                    <button type="submit">Become a member</button>
+                    <button id="become" type="submit">Become a member</button>
                 ) : (
-                    <button type="button" onClick={updateMember}>Save changes</button>
+                    <button id="save" type="button" onClick={updateMember}>Save changes</button>
                 )}
             </form>
 

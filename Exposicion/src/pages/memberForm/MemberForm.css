@@ -1,5 +1,5 @@
 form {
-    margin-top: 7em;
+    margin-top: 1em;
     margin-bottom: 0;
     padding: 10%;
     display: flex;
@@ -8,6 +8,13 @@ form {
     font-size: 25px;
     color: #40c9ff;
     gap: .6em;
+}
+
+#form-h1{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 100px;
+    color: #40c9ff;
 }
 
 input {
@@ -28,7 +35,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
+    gap: 4em;
     margin-bottom: 2em;
 }
 
@@ -117,6 +124,16 @@ input {
         padding-bottom: 0;
     }
 
+    #become{
+        position: relative;
+        left: 38%;
+    }
+
+    #save{
+        position: relative;
+        left: 38%;
+    }
+
     .members-container {
         display: flex;
         flex-direction: row;
@@ -124,4 +141,18 @@ input {
         padding: 10%;
     }
 
+}
+
+@media only screen and (min-width: 1026px){
+    form{
+        font-size: x-large;
+    }
+    
+    #become{
+        left: 43%;
+    }
+
+    #save{
+        left: 43%;
+    }
 }
