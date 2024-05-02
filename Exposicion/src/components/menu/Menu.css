@@ -1,0 +1,47 @@
+.menu{
+    position: absolute;
+    left: 90%;
+    
+}
+
+.menu-options{
+    gap: .6em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+}
+
+#close-menu{
+    position: relative;
+    left: 90%;
+    top: 20%;
+
+}
+
+.side-menu{
+    background-color: rgb(131, 111, 255);
+    position: fixed;
+    top: -300px;
+    width: 100vw;
+    height: 20vh;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+    left: 0%;
+    border-radius: 0  0 10px 10px;
+}
+
+.show{
+    visibility: visible;
+    left: 0;
+    top: 0;
+    transition: all 1s ease-in-out;
+}
+
+@media only screen and (min-width: 400px){
+    .menu{
+        display: none;
+    }
+}

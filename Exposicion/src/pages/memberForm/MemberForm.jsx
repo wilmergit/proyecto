@@ -115,7 +115,7 @@ function MemberForm() {
                 {
 
                     members.map((m, index) =>
-                        <div className="member-item" key={m.key}>
+                        <div id="list" className="member-item" key={m.key}>
                             <p><img src="./images/Heaven.png" alt="usu" /><span>User:</span> {m.nickname} <span>Email:</span> {m.email}</p>
                             <div className="buttons">
                                 <button className="delete-member" onClick={() => removeMember(m.key, index)}>Delete</button>

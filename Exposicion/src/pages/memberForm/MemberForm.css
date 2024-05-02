@@ -1,6 +1,6 @@
 form {
     margin-top: 7em;
-    margin-bottom: 1em;
+    margin-bottom: 0;
     padding: 10%;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ form {
 
 input {
     background: none;
-    margin-bottom: 2em;
+
     height: 23px;
     width: 200px;
     border-style: groove;
@@ -104,5 +104,24 @@ input {
 .edit-member:hover{
     color: black;
     background-color: var(--glow-color);
+
+}
+
+@media only screen and (min-width: 850px){
+    form{
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-bottom: 0;
+    }
+
+    .members-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10%;
+    }
 
 }

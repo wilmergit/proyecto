@@ -1,4 +1,5 @@
 import "./Header.css";
+import Menu from "../../components/menu/Menu.jsx";
 
 function Header(){
     return (
@@ -11,6 +12,7 @@ function Header(){
                 <li><a href="/membership">Membership</a></li>
                 <li><a href="/home#footer">Contact</a></li>
             </ul>
+            <Menu/>
         </div>
     )
 }
