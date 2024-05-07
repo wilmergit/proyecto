@@ -1,7 +1,4 @@
 .stt {
-    --glow-color: rgb(131, 111, 255);
-    --glow-spread-color: rgb(165, 151, 253);
-    --btn-color: rgb(131, 111, 255);
     position: fixed;
     right: 1rem;
     bottom: 1rem;
@@ -10,9 +7,9 @@
     border-radius: 50%;
     background: rgb(158, 144, 247) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
     outline: none;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color-stt),
+        0 0 4em 1em var(--glow-spread-color-stt),
+        inset 0 0 .75em .25em var(--glow-color-stt);
     opacity: 0.7;
     z-index: 100;
     transition: all .6s ease;

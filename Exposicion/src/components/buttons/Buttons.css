@@ -10,21 +10,19 @@
 }
 
 button {
-    --glow-color: #40c9ff;
-    --glow-spread-color: #319ac4;
-    --btn-color: #226580;
-    border: .25em solid var(--glow-color);
+
+    border: .25em solid var(--glow-color-buttons-buttons);
     padding: 1em 3em;
-    color: var(--glow-color);
+    color: var(--glow-color-buttons);
     font-size: 15px;
     font-weight: bold;
-    background-color: var(--btn-color);
+    background-color: var(--btn-color-buttons);
     border-radius: 1em;
     outline: none;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color-buttons),
+        0 0 4em 1em var(--glow-spread-color-buttons),
+        inset 0 0 .75em .25em var(--glow-color-buttons);
+    text-shadow: 0 0 .5em var(--glow-color-buttons);
     position: relative;
     transition: all 0.3s;
 }
@@ -37,23 +35,23 @@ button::after {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--glow-spread-color);
+    background-color: var(--glow-spread-color-buttons);
     filter: blur(2em);
     opacity: .7;
     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
 button:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 2em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
+    color: var(--btn-color-buttons);
+    background-color: var(--glow-color-buttons);
+    box-shadow: 0 0 1em .25em var(--glow-color-buttons),
+        0 0 4em 2em var(--glow-spread-color-buttons),
+        inset 0 0 .75em .25em var(--glow-color-buttons);
 }
 
 button:active {
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-        0 0 2.5em 2em var(--glow-spread-color),
-        inset 0 0 .5em .25em var(--glow-color);
+    box-shadow: 0 0 0.6em .25em var(--glow-color-buttons),
+        0 0 2.5em 2em var(--glow-spread-color-buttons),
+        inset 0 0 .5em .25em var(--glow-color-buttons);
 }
 

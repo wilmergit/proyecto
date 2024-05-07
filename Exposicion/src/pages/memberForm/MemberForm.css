@@ -58,21 +58,18 @@ input {
 }
 
 .delete-member {
-    --glow-color: rgb(214, 36, 36);
-    --glow-spread-color: rgb(255, 0, 0);
-    --btn-color: rgba(255, 0, 0, 0);
     display: flex;
     align-items: center;
     height: 40px;
     width: 140px;
     letter-spacing: 1px;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color-delete),
+        0 0 4em 1em var(--glow-spread-color-delete),
+        inset 0 0 .75em .25em var(--glow-color-delete);
+    text-shadow: 0 0 .5em var(--glow-color-delete);
     color: red;
-    border: .25em solid var(--glow-color);
-    background-color: var(--btn-color);
+    border: .25em solid var(--glow-color-delete);
+    background-color: var(--btn-color-delete);
 
 }
 
@@ -86,31 +83,29 @@ input {
 
 .delete-member:hover {
     color: black;
-    background-color: var(--glow-color);
+    background-color: var(--glow-color-delete);
 
 }
 
 .edit-member {
-    --glow-color: rgb(255, 255, 255);
-    --glow-spread-color: rgba(240, 240, 240, 0.856);
-    --btn-color: rgb(0, 0, 0);
+
     display: flex;
     align-items: center;
     height: 40px;
     width: 140px;
     letter-spacing: 1px;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-        0 0 4em 1em var(--glow-spread-color),
-        inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
-    color: var(--glow-color);
-    border: .25em solid var(--glow-color);
-    background-color: var(--btn-color);
+    box-shadow: 0 0 1em .25em var(--glow-color-edit),
+        0 0 4em 1em var(--glow-spread-color-edit),
+        inset 0 0 .75em .25em var(--glow-color-edit);
+    text-shadow: 0 0 .5em var(--glow-color-edit);
+    color: var(--glow-color-edit);
+    border: .25em solid var(--glow-color-edit);
+    background-color: var(--btn-color-edit);
 }
 
 .edit-member:hover{
     color: black;
-    background-color: var(--glow-color);
+    background-color: var(--glow-color-delete);
 
 }
 
