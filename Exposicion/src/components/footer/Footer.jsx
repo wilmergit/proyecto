@@ -14,7 +14,7 @@ function Footer() {
                 <a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i></a>
                 <a href="https://twitter.com/"><i class="ri-twitter-x-line"></i></a>
                 <a href="https://github.com/wilmergit"><i class="ri-github-fill"></i></a>
-                <a href=""><i class="fa-solid fa-rss"></i></a>
+                <a href="./rss/Rss.xml"><i class="fa-solid fa-rss"></i></a>
             </div>
             <p>
                 All rigths reserved
