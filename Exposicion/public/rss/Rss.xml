@@ -2,81 +2,108 @@
 <rss version="2.0">
     <channel>
         <title>Top 10 juegos del 2024</title>
-        <description>Dedicated section to highlight the most
-                    popular games from this year</description>
+        <description>
+            Dedicated section to highlight the most
+            popular games from this year
+        </description>
         <link>https://as.com/meristation/juegos/top/2024/</link>
         <item>
             <title>Prince of Persia: The lost crown</title>
-            <description>Viaja por la mitología persa y manipula los límites del espacio y el tiempo.
-                        Usa tus poderes del tiempo, habilidades de combate y movimientos para ejecutar combos
-                        letales y derrotar a criaturas mitológicas y enemigos corrompidos por el tiempo.
+            <description>
+                Viaja por la mitología persa y manipula los límites del espacio y el tiempo.
+                Usa tus poderes del tiempo, habilidades de combate y movimientos para ejecutar combos
+                letales y derrotar a criaturas mitológicas y enemigos corrompidos por el tiempo.
             </description>
             <link>https://as.com/meristation/juegos/prince-of-persia-the-lost-crown/</link>
         </item>
         <item>
             <title>Final Fantasy VII Rebirth</title>
-            <description>Final Fantasy VII Rebirth es un videojuego de acción RPG a cargo de Square Enix 
-                        para PlaySation 5 que continúa con la historia de Final Fantasy VII Remake. La travesía 
-                        desconocida continúa… Tras escapar de la distópica ciudad de Midgar, Cloud y sus amigos 
-                        se embarcan en un viaje por todo el planeta. Les aguardan nuevas aventuras en vasto y 
-                        vibrante mundo.
+            <description>
+                Final Fantasy VII Rebirth es un videojuego de acción RPG a cargo de Square Enix 
+                para PlaySation 5 que continúa con la historia de Final Fantasy VII Remake. La travesía 
+                desconocida continúa… Tras escapar de la distópica ciudad de Midgar, Cloud y sus amigos 
+                se embarcan en un viaje por todo el planeta. Les aguardan nuevas aventuras en vasto y 
+                vibrante mundo.
             </description>
             <link>https://as.com/meristation/juegos/final-fantasy-vii-rebirth/</link>
         </item>
         <item>
             <title>Like a Dragon: Infinite Wealth</title>
-            <description>Like a Dragon: Infinite Wealth es un RPG con combates por turnos a cargo de 
-                        Ryu Ga Gotoku Studio y Sega para PC, PlayStation 4, Xbox One, PlayStation 5 y Xbox Series 
-                        que sigue con las aventuras de Ichiban Kasuga. Dos héroes más grandes que la vida misma se 
-                        unen guiados por el destino, o quizás, por algo más siniestro…
+            <description>
+                Like a Dragon: Infinite Wealth es un RPG con combates por turnos a cargo de 
+                Ryu Ga Gotoku Studio y Sega para PC, PlayStation 4, Xbox One, PlayStation 5 y Xbox Series 
+                que sigue con las aventuras de Ichiban Kasuga. Dos héroes más grandes que la vida misma se 
+                unen guiados por el destino, o quizás, por algo más siniestro…
             </description>
             <link>https://as.com/meristation/juegos/like-a-dragon-8/</link>
         </item>
         <item>
             <title>Dragon's Dogma 2</title>
-            <description>Dragon's Dogma 2 es un videojuego de acción RPG a cargo de Capcom para PC, 
-                        PlayStation 5 y Xbox Series ambientado en el fantástico universo de la franquicia. 
-                        La historia arranca en una prisión subterránea donde el eco de la voz del dragón resuena 
-                        en la niebla de recuerdos perdidos.
+            <description>
+                Dragon's Dogma 2 es un videojuego de acción RPG a cargo de Capcom para PC, 
+                PlayStation 5 y Xbox Series ambientado en el fantástico universo de la franquicia. 
+                La historia arranca en una prisión subterránea donde el eco de la voz del dragón resuena 
+                en la niebla de recuerdos perdidos.
             </description>
             <link>https://as.com/meristation/juegos/dragon-s-dogma-2/</link>
         </item>
         <item>
             <title>Balatro</title>
+            <img src="./images/balatro.avif" alt="caratula" />
             <description>
-                <CDATA>
-                    <img src="./images/balatro.avif" alt="caratula" />
-                </CDATA>El roguelike de póker. Balatro es un hipnótico y genial constructor de mazos, un videojuego de estrategia a cargo de LocalThunk y Playstack donde podrás jugar manos ilegales de póker, descubrir comodines que alterarán tus partidas y activar combos impresionantes que dispararán tu adrenalina.</description>
+                El roguelike de póker. Balatro es un hipnótico y genial constructor de mazos, un videojuego de estrategia a cargo de LocalThunk y 
+                Playstack donde podrás jugar manos ilegales de póker, descubrir comodines que alterarán tus partidas y activar combos impresionantes 
+                que dispararán tu adrenalina.
+            </description>
             <link>https://as.com/meristation/juegos/balatro/</link>
         </item>
         <item>
             <title>Tekken 8</title>
             <img src="./images/tekken.avif" alt="caratula" />
-            <description>Tekken 8 lleva al límite el hardware y las tecnologías de última generación. El juego incluye modelos de personajes en alta definición creados desde cero, con pelo y piel de alta fidelidad, además de gráficos inmersivos, como puede observarse en el reflejo de los movimientos de los personajes en el propio movimiento de los músculos.</description>
+            <description>
+                Tekken 8 lleva al límite el hardware y las tecnologías de última generación. El juego incluye modelos de personajes en 
+                alta definición creados desde cero, con pelo y piel de alta fidelidad, además de gráficos inmersivos, como puede observarse en el reflejo 
+                de los movimientos de los personajes en el propio movimiento de los músculos.
+            </description>
             <link>https://as.com/meristation/juegos/tekken-8/</link>
         </item>
         <item>
             <title>Persona 3 Reload</title>
             <img src="./images/persona3.avif" alt="caratula" />
-            <description>Ponte en la piel de un estudiante transferido empujado a un destino inesperado al entrar en la hora "oculta" entre un día y el siguiente. Despierta un poder increíble y persigue los misterios de la Hora Oscura, lucha por tus amigos y deja una huella en sus recuerdos para siempre. </description>
+            <description>
+                Ponte en la piel de un estudiante transferido empujado a un destino inesperado al entrar en la hora 
+                "oculta" entre un día y el siguiente. Despierta un poder increíble y persigue los misterios de la Hora 
+                Oscura, lucha por tus amigos y deja una huella en sus recuerdos para siempre. 
+            </description>
             <link>https://as.com/meristation/juegos/persona-3-reload/</link>
         </item>
         <item>
             <title>Eiyuden Chronicle: Hundred Heroes</title>
             <img src="./images/eiyuden.avif" alt="caratula" />
-            <description>Eiyuden Chronicle: Hundred Heroes es un RPG de los creadores de la saga Suikoden. Un juego diseñado para ofrecer a los jugadores una versión moderna de la clásica experiencia de un JRPG. </description>
+            <description>
+                Eiyuden Chronicle: Hundred Heroes es un RPG de los creadores de la saga Suikoden. Un juego diseñado 
+                para ofrecer a los jugadores una versión moderna de la clásica experiencia de un JRPG. 
+            </description>
             <link>https://as.com/meristation/juegos/eiyuden-chronicle-hundred-heroes/</link>
         </item>
         <item>
             <title>Stellar Blade</title>
             <img src="./images/stellar.avif" alt="caratula" />
-            <description>Eve y sus camaradas aterrizan en la superficie para reocupar la Tierra extinta y se encuentran con un superviviente llamado Adam. Adam lleva a Eve a Xion, el último reducto de la humanidad.</description>
+            <description>
+                Eve y sus camaradas aterrizan en la superficie para reocupar la Tierra extinta y se encuentran con un 
+                superviviente llamado Adam. Adam lleva a Eve a Xion, el último reducto de la humanidad.
+            </description>
             <link>https://as.com/meristation/juegos/project-eve/</link>
         </item>
         <item>
             <title>Freedom Planet 2</title>
             <img src="./images/freedom.avif" alt="caratula" />
-            <description>es un plataformas frenético de estilo retro y secuela del exitoso Freedom Planet. Únete a los héroes de Avalice mientras enfrentan su mayor desafío hasta el momento. Un antiguo terror ha surgido de las profundidades del océano. Merga, un dragón de agua de la guerra más antigua y mortífera de Avalice, ha sido liberado de su prisión de cristal como consecuencia de la destrucción de la Piedra del Reino</description>
+            <description>
+                Es un plataformas frenético de estilo retro y secuela del exitoso Freedom Planet. Únete a los 
+                héroes de Avalice mientras enfrentan su mayor desafío hasta el momento. Un antiguo terror ha surgido de 
+                las profundidades del océano. Merga, un dragón de agua de la guerra más antigua y mortífera de Avalice, 
+                ha sido liberado de su prisión de cristal como consecuencia de la destrucción de la Piedra del Reino
+            </description>
             <link>https://as.com/meristation/juegos/freedom-planet-2/</link>
         </item>
     </channel>
