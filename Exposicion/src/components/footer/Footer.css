@@ -43,7 +43,7 @@ img{
 .footer-icons{
     position: absolute;
     top: 40%;
-    left: 38%;
+
     transform: translateY(10px);
     display: flex;
     flex-direction: row;
@@ -65,18 +65,18 @@ img{
 
 @media only screen and (min-width: 600px){
     .footer-icons{
-        left: 42%;
+        left: 38%;
     }
 }
 
 @media only screen and (min-width: 768px){
     .footer-icons{
-        left: 45%;
+        left: 40%;
     }
 }
 
 @media only screen and (min-width: 992px){
     .footer-icons{
-        left: 48%;
+        left: 46%;
     }
 }

@@ -1,19 +1,26 @@
 form {
     margin-top: 1em;
     margin-bottom: 0;
-    padding: 10%;
+    padding: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 25px;
     color: #40c9ff;
-    gap: .6em;
+    gap: 1em;
+    background-color: rgba(27, 26, 26, 0.432);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    width: 95vw;
+    margin-left: .4em;
+    margin-right: .4em;
 }
+
 
 #form-h1{
     text-align: center;
     margin-top: 2em;
-    font-size: 100px;
+    font-size: 80px;
     color: #40c9ff;
 }
 
@@ -55,6 +62,10 @@ input {
 .members-container img {
     height: 80px;
     width: 80px;
+}
+
+#become::after{
+    content:unset;
 }
 
 .delete-member {
