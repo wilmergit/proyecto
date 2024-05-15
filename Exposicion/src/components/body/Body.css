@@ -25,7 +25,7 @@
     background-color: rgba(27, 26, 26, 0.432);
     backdrop-filter: blur(20px);
     border-radius: 15px;
-    width: 40vw;
+    width: 85vw;
     padding: .4em;
 }
 
@@ -37,7 +37,7 @@
     background-color: rgba(27, 26, 26, 0.432);
     backdrop-filter: blur(20px);
     border-radius: 15px;
-    width: 40vw;
+    width: 85vw;
     padding: .4em;
 }
 
@@ -88,5 +88,13 @@
         display: flex;
         flex-direction: row;
 
+    }
+
+    .part-1{
+        width: 40vw;
+    }
+
+    .part-2{
+        width: 40vw;
     }
 }

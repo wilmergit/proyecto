@@ -29,6 +29,8 @@ function MemberForm() {
         setDate(a.target.value)
     }
 
+    
+
     const addNewMember = (a) => {
         saveMember(a.target.name.value, a.target.nickname.value,
             a.target.email.value, a.target.date.value)
@@ -91,19 +93,27 @@ function MemberForm() {
         getAllMembers();
     }, [])
 
+
     return (
         <>
             <Header />
             <h1 id="form-h1">Enjoy the heaven..</h1>
             <form onSubmit={addNewMember}>
-                <label htmlFor="name">Name: </label>
-                <input type="text" id="name" name="name" value={name} onChange={changeName} />
-                <label htmlFor="nickname">Nickname: </label>
-                <input type="text" id="nickname" name="nickname" value={nickname} onChange={changeNick} />
-                <label htmlFor="email">Email: </label>
-                <input type="email" id="email" name="email" value={email} onChange={changeEmail} />
-                <label htmlFor="date">Birth date: </label>
-                <input type="date" id="date" name="date" value={date} onChange={changeDate} />
+                <div className="input-wrapper">
+                    <input type="text" id="name" name="name" value={name} placeholder="Name" onChange={changeName} />
+                    <label className="input-label" htmlFor="name">Name</label>
+                </div>
+                <div className="input-wrapper">
+                    <input type="text" id="nickname" name="nickname" value={nickname} placeholder="Nickname" onChange={changeNick} />
+                    <label className="input-label" htmlFor="nickname">Nickname</label>
+                </div>
+                <div className="input-wrapper">
+                    <input type="email" id="email" name="email" value={email} placeholder="Email" onChange={changeEmail} />
+                    <label className="input-label" htmlFor="email">Email</label>
+                </div>
+                <div className="input-wrapper">
+                    <input type="date" id="date" name="date" value={date} placeholder="Birth date" onChange={changeDate} />
+                </div>
 
                 {editingIndex === -1 ? (
                     <button id="become" type="submit">Become a member</button>

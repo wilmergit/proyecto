@@ -11,32 +11,67 @@ form {
     background-color: rgba(27, 26, 26, 0.432);
     backdrop-filter: blur(20px);
     border-radius: 15px;
-    width: 95vw;
-    margin-left: .4em;
-    margin-right: .4em;
+    width: 90vw;
+    margin-left: .8em;
+    margin-right: .8em;
 }
 
 
-#form-h1{
+#form-h1 {
     text-align: center;
     margin-top: 2em;
     font-size: 80px;
     color: #40c9ff;
 }
 
-input {
-    background: none;
+.input-wrapper {
+    position: relative;
+    padding: 1rem 0 0;
+  }
 
-    height: 23px;
-    width: 200px;
-    border-style: groove;
-    border-color: white;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+input {
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 1rem;
     color: white;
-    text-align: center;
+    padding: 0.25rem 0px;
+    padding-right: 2rem;
+
+    background: transparent;
+    transition: border-color 0.2s;
 }
+
+input::placeholder {
+    color: transparent;
+}
+
+input:placeholder-shown~.input-label {
+    font-size: 1rem;
+    cursor: text;
+    color: white;
+    top: 1.25rem;
+}
+
+label,
+input:focus~.input-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    font-size: 0.875rem;
+    left: -0.0625rem;
+    color: white;
+    transition: 0.3s;
+}
+
+input:focus~.input-label {
+    color: #40c9ff;
+}
+
+input:focus {
+    border-bottom: 2px solid white;
+}
+
 
 .members-container {
     display: flex;
@@ -64,8 +99,8 @@ input {
     width: 80px;
 }
 
-#become::after{
-    content:unset;
+#become::after {
+    content: unset;
 }
 
 .delete-member {
@@ -87,11 +122,11 @@ input {
 
 }
 
-.delete-member::after{
+.delete-member::after {
     content: unset;
 }
 
-.edit-member::after{
+.edit-member::after {
     content: unset;
 }
 
@@ -119,28 +154,29 @@ input {
     background-color: var(--btn-color);
 }
 
-.edit-member:hover{
+.edit-member:hover {
     color: black;
     background-color: var(--glow-color);
 
 }
 
-@media only screen and (min-width: 850px){
-    form{
+@media only screen and (min-width: 850px) {
+    form {
         font-size: large;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 40px;
-        padding-bottom: 0;
+        gap: 50px;
+        padding-bottom: 2em;
+        margin-left: 2.3em;
     }
 
-    #become{
+    #become {
         position: relative;
         left: 38%;
     }
 
-    #save{
+    #save {
         position: relative;
         left: 38%;
     }
@@ -154,16 +190,16 @@ input {
 
 }
 
-@media only screen and (min-width: 1026px){
-    form{
+@media only screen and (min-width: 1026px) {
+    form {
         font-size: x-large;
     }
-    
-    #become{
-        left: 43%;
+
+    #become {
+        left: 12%;
     }
 
-    #save{
+    #save {
         left: 43%;
     }
 }
