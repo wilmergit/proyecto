@@ -1,0 +1,81 @@
+.ReactModal__Overlay{
+    background-color: rgba(15, 13, 13, 0.781) !important; 
+}
+
+.modal {
+    background-color: black;
+    width: 98vw;
+    height: 70vh;
+    transform: translate(1%, 20%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1.3em;
+    font-size: 15px;
+}
+
+.cookie-button{
+    width: 150px;
+    margin: 1.5em;
+}
+
+.buttons-cookies{
+    padding: 1em;
+    
+}
+
+.points{
+    color: #40c9ff;
+}
+
+@media only screen and (min-width: 600px){
+    .buttons-cookies{
+        padding: 2em;
+
+    }
+
+    .cookie-button{
+        width: 180px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .buttons-cookies{
+        position: relative;
+        left: 2%;
+        padding: 3em;
+    }
+
+    .cookie-button{
+        width: 200px;
+    }
+
+    .modal{
+        position: relative;
+        left: 10%;
+        width: 80vw;
+        height: 70vh;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .buttons-cookies{
+        position: relative;
+        left: 6%;
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    
+    .modal{
+        position: relative;
+        left: 26%;
+        padding: 4em;
+        width: 50vw;
+    }
+    .buttons-cookies{
+        position: relative;
+        left: 20%;
+    }
+}
