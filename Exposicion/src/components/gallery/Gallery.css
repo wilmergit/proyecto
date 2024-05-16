@@ -1,0 +1,328 @@
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider-images {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.slider-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.slider-img {
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+}
+
+.slider-images .slider-img:first-child,
+.slider-images .slider-img:last-child {
+    height: 480px;
+}
+
+.slider-images .slider-img:nth-child(2),
+.slider-images .slider-img:nth-child(5) {
+    height: 560px;
+
+}
+
+.slider-images .slider-img:nth-child(3),
+.slider-images .slider-img:nth-child(4),
+.slider-images .slider-img:nth-child(5) {
+    height: 665px;
+
+
+}
+
+.slider-images .slider-img:nth-child(6) {
+    height: 560px;
+}
+
+.slider-container h1 {
+    font-size: 54px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    transform: rotate(270deg);
+    transition: 0.7s ease;
+}
+
+.details {
+    position: absolute;
+    top: 50px;
+    left: 43px;
+}
+
+.details h2 {
+    font-family: "Jost", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none;
+}
+
+.details p {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 33px;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none;
+}
+
+.slider-img.active {
+    width: 766px !important;
+    height: 750px !important;
+    
+}
+
+.slider-img.active h1 {
+    display: none;
+}
+
+.slider-img.active .details p,
+.slider-img.active .details h2 {
+    display: block;
+}
+
+@media only screen and (max-width: 1020px) {
+    .slider-container{
+        margin-top: 30em;
+        margin-bottom: 20em;
+    }
+    
+    .slider-images {
+        flex-direction: column;
+        margin-bottom: 10em;
+        justify-content: center;
+    }
+
+
+    .slider-images .slider-img:first-child,
+    .slider-images .slider-img:last-child {
+        width: 550px;
+        height: 120px;
+    }
+
+    .slider-images .slider-img:nth-child(2),
+    .slider-images .slider-img:nth-child(5) {
+        width: 600px;
+        height: 120px;
+    }
+
+    .slider-images .slider-img:nth-child(3),
+    .slider-images .slider-img:nth-child(4),
+    .slider-images .slider-img:nth-child(5) {
+        width: 660px;
+        height: 120px;
+    }
+
+    .slider-images .slider-img:nth-child(6) {
+        width: 600px;
+        height: 120px;
+    }
+
+    .slider-img.active {
+        width: 750px !important;
+        height: 700px !important;
+    }
+
+    .slider-container h1 {
+        transform: none;
+        text-align: justify;
+        top: 0;
+        left: 20%;
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 992) {
+    .slider-images {
+        flex-direction: column;
+        margin-bottom: 10em;
+        justify-content: center;
+    }
+
+
+
+
+    .slider-images .slider-img:first-child,
+    .slider-images .slider-img:last-child {
+        width: 480px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(2),
+    .slider-images .slider-img:nth-child(5) {
+        width: 550px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(3),
+    .slider-images .slider-img:nth-child(4),
+    .slider-images .slider-img:nth-child(5) {
+        width: 600px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(6) {
+        width: 550px;
+        height: 100px;
+    }
+
+    .slider-img.active {
+        width: 660px !important;
+        height: 600px !important;
+    }
+
+    .slider-container h1 {
+        transform: none;
+        text-align: justify;
+        top: 0;
+        left: 20%;
+        font-size: 35px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 768px) {
+    .slider-container{
+        margin-top: 15em;
+        margin-bottom: 10em;
+    }
+    
+    .slider-images {
+        flex-direction: column;
+        margin-bottom: 10em;
+        justify-content: center;
+    }
+
+    .slider-images .slider-img:first-child,
+    .slider-images .slider-img:last-child {
+        width: 390px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(2),
+    .slider-images .slider-img:nth-child(5) {
+        width: 410px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(3),
+    .slider-images .slider-img:nth-child(4),
+    .slider-images .slider-img:nth-child(5) {
+        width: 430px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(6) {
+        width: 410px;
+        height: 100px;
+    }
+
+    .slider-img.active {
+        width: 440px !important;
+        height: 470px !important;
+    }
+
+    .slider-container h1 {
+        transform: none;
+        text-align: justify;
+        top: 0;
+        left: 20%;
+        font-size: 35px;
+    }
+
+    #img-title {
+        left: 40%;
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slider-images {
+        flex-direction: column;
+        margin-bottom: 10em;
+        justify-content: center;
+    }
+
+    .slider-container {
+        margin-top: 15em;
+        padding-bottom: 3em;
+
+    }
+
+
+    .slider-images .slider-img:first-child,
+    .slider-images .slider-img:last-child {
+        width: 350px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(2),
+    .slider-images .slider-img:nth-child(5) {
+        width: 380px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(3),
+    .slider-images .slider-img:nth-child(4),
+    .slider-images .slider-img:nth-child(5) {
+        width: 405px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(6) {
+        width: 380px;
+        height: 100px;
+
+    }
+
+    .slider-img.active {
+        width: 410px !important;
+        height: 470px !important;
+    }
+
+    .slider-container h1 {
+        transform: none;
+        text-align: justify;
+        top: 0;
+        left: 20%;
+        font-size: 35px;
+    }
+
+    #img-title {
+        left: 40%;
+        top: 20%;
+    }
+}

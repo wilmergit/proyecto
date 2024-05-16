@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import "./MemberForm.css";
-import MemberService from "../../services/firebase/members.service.js"
+import MemberService from "../../services/firebase/members.service.js";
 
 function MemberForm() {
-
     const [name, setName] = useState("");
     const [nickname, setNickname] = useState("");
     const [email, setEmail] = useState("");
@@ -13,42 +12,40 @@ function MemberForm() {
     const [members, setMembers] = useState([]);
     const [editingIndex, setEditingIndex] = useState(-1);
 
-    const changeName = (a) => {
-        setName(a.target.value)
+    const changeName = (e) => {
+        setName(e.target.value);
     }
 
-    const changeNick = (a) => {
-        setNickname(a.target.value)
+    const changeNick = (e) => {
+        setNickname(e.target.value);
     }
 
-    const changeEmail = (a) => {
-        setEmail(a.target.value)
+    const changeEmail = (e) => {
+        setEmail(e.target.value);
     }
 
-    const changeDate = (a) => {
-        setDate(a.target.value)
+    const changeDate = (e) => {
+        setDate(e.target.value);
     }
 
-    
-
-    const addNewMember = (a) => {
-        saveMember(a.target.name.value, a.target.nickname.value,
-            a.target.email.value, a.target.date.value)
+    const addNewMember = (e) => {
+        e.preventDefault();
+        saveMember(name, nickname, email, date);
     }
 
     const removeMember = (key, index) => {
         setEditingIndex(-1);
-        MemberService.removeMember(key).then((res) => {
+        MemberService.removeMember(key).then(() => {
             getAllMembers();
         });
     }
 
     const saveMember = (name, nickname, email, date) => {
-        MemberService.addMember(name, nickname, email, date).then((response) => {
-            console.log("Guardado.")
-        })
+        MemberService.addMember(name, nickname, email, date).then(() => {
+            console.log("Guardado.");
+            getAllMembers();
+        });
     }
-
 
     const editMember = (index) => {
         setEditingIndex(index);
@@ -93,7 +90,6 @@ function MemberForm() {
         getAllMembers();
     }, [])
 
-
     return (
         <>
             <Header />
@@ -124,16 +120,21 @@ function MemberForm() {
 
             <div className="members-container">
                 {
+                    members.map((m, index) => {
+                        const min = 1;
+                        const max = 5;
+                        const random = Math.floor(Math.random() * (max - min + 1)) + min;
 
-                    members.map((m, index) =>
-                        <div id="list" className="member-item" key={m.key}>
-                            <p><img src="./images/Heaven.png" alt="usu" /><span>User:</span> {m.nickname} <span>Email:</span> {m.email}</p>
-                            <div className="buttons">
-                                <button className="delete-member" onClick={() => removeMember(m.key, index)}>Delete</button>
-                                <button className="edit-member" onClick={() => editMember(index)}>Edit</button>
+                        return (
+                            <div id="list" className="member-item" key={m.key}>
+                                <p><img className="user" src={`./images/${random}.png`} alt="usu" /><span>User:</span> {m.nickname} <span>Email:</span> {m.email}</p>
+                                <div className="buttons">
+                                    <button className="delete-member" onClick={() => removeMember(m.key, index)}>Delete</button>
+                                    <button className="edit-member" onClick={() => editMember(index)}>Edit</button>
+                                </div>
                             </div>
-                        </div>
-                    )
+                        );
+                    })
                 }
             </div>
 

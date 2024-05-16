@@ -29,7 +29,12 @@ form {
     padding: 1rem 0 0;
   }
 
+.user{
+    background-color: white;
+}
+
 input {
+
     border: 0;
     border-bottom: 2px solid white;
     outline: 0;
@@ -78,6 +83,7 @@ input:focus {
     flex-direction: column;
     align-items: center;
     gap: 4em;
+    margin-top: 4em;
     margin-bottom: 2em;
 }
 

@@ -1,6 +1,7 @@
 import Buttons from "../buttons/Buttons";
 import Cards from "../cards/Cards";
-import ImageList from "../imageList/ImageList";
+import Gallery from "../gallery/Gallery";
+
 import Stt from "../stt/Stt";
 import "./Body.css";
 
@@ -42,7 +43,7 @@ function Body(){
                     <p>Then, choose the genre or category for the game
                         and later the game itself.
                     </p>
-                    <ImageList/>
+                    <Gallery/>
                 </div>
                 <Cards/>
             </div>
