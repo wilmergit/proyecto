@@ -5,6 +5,7 @@ import "./MemberForm.css";
 import MemberService from "../../services/firebase/members.service.js";
 
 function MemberForm() {
+    
     const [name, setName] = useState("");
     const [nickname, setNickname] = useState("");
     const [email, setEmail] = useState("");

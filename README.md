@@ -66,6 +66,19 @@ at any time, offering the safest way to do it.
 
 ![Screenshot](./Exposicion/public/images/rss.png)
 
+## Extra Component
+
+I found Visx as a big react components library where I found Drag II,
+basically a whiteboard to draw anything you want!
+
+![Screenshot](./Exposicion/public/images/componenten-extra.PNG)
+
+(You can find this component inside the "drawing" folder in components,
+I had to modify some things from the original one because it was meant to
+be used with TypeScript)
+
+Link for the component -> https://airbnb.io/visx/drag-ii
+
 ### Built With
 
 * [![React][React.js]][React-url]
@@ -138,6 +151,7 @@ Thanks to different webs that will be listed here and many classmates it was pos
 * [LottieFiles](https://app.lottiefiles.com/)
 * [Minimal Gallery](https://minimal.gallery/)
 * [Google Fonts](https://fonts.google.com/specimen/Madimi+One?query=madimi)
+* [Visx](https://airbnb.io/visx)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

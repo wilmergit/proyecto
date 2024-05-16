@@ -1,5 +1,6 @@
 import Buttons from "../buttons/Buttons";
 import Cards from "../cards/Cards";
+import DragII from "../drawing/Drawing";
 import Gallery from "../gallery/Gallery";
 
 import Stt from "../stt/Stt";
@@ -46,6 +47,10 @@ function Body(){
                     <Gallery/>
                 </div>
                 <Cards/>
+                <div className="firma">
+                    <h1>Leave your signature!</h1>
+                    <DragII/>
+                </div>
             </div>
             <Stt/>
         </>

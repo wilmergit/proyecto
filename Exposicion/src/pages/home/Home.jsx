@@ -1,4 +1,5 @@
 import Body from "../../components/body/Body";
+import CookieHandler from "../../components/cookieHandler/CookieHandler";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Socials from "../../components/socials/Socials";
@@ -8,6 +9,7 @@ function Home(){
     return(
         <>
             <Header/>
+            <CookieHandler/>
             <div className="home-content">
                 <div className="main">
                     <h5>Videogames for everyone</h5>
