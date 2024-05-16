@@ -10,6 +10,23 @@
 :root{
   --bg-color: black;
   --text-color: #fff;
+
+  /*Botones generales*/
+  --glow-color-buttons: #40c9ff;
+  --glow-spread-color-buttons: #319ac4;
+  --btn-color-buttons: #226580;
+  /*Boton de editar*/
+  --glow-color-edit: rgb(255, 255, 255);
+  --glow-spread-color-edit: rgba(240, 240, 240, 0.856);
+  --btn-color-edit: rgb(0, 0, 0);
+  /*Boton de borrar*/
+  --glow-color-delete: rgb(214, 36, 36);
+  --glow-spread-color-delete: rgb(255, 0, 0);
+  --btn-color-delete: rgba(255, 0, 0, 0);
+  /*Boton para volver arriba*/
+  --glow-color-stt: rgb(131, 111, 255);
+  --glow-spread-color-stt: rgb(165, 151, 253);
+  --btn-color-stt: rgb(131, 111, 255);
 }
 
 body{
