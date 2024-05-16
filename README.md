@@ -10,9 +10,9 @@
 
 
 <!-- PROJECT LOGO -->
+![LOGO](./Exposicion/public/images/Heaven.png)
 <br />
 <div align="center">
-![LOGO](./Exposicion/public/images/Heaven.png)
 
 <h3 align="center">Heaven</h3>
 
@@ -62,7 +62,9 @@ at any time, offering the safest way to do it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## RSS
 
+![Screenshot](./Exposicion/public/images/rss.png)
 
 ### Built With
 
