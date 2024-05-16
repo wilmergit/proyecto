@@ -22,15 +22,20 @@
 }
 
 .side-menu{
-    background-color: rgb(131, 111, 255);
+    background-color: rgba(27, 26, 26, 0.432);
+    backdrop-filter: blur(20px);
     position: fixed;
     top: -300px;
+    border-width: 2px;
+    border-color: rgba(128, 128, 128, 0.473);
+    border-style: solid;
     width: 100vw;
     height: 20vh;
     visibility: visible;
     transition: all 1s ease-in-out;
     left: 0%;
-    border-radius: 0  0 10px 10px;
+    border-radius: 10px  10px 10px 10px;
+    
 }
 
 .show{
@@ -38,6 +43,7 @@
     left: 0;
     top: 0;
     transition: all 1s ease-in-out;
+    
 }
 
 @media only screen and (min-width: 400px){

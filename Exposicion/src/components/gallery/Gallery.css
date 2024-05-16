@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     gap: 21px;
+    
 }
 
 .slider-images img {
@@ -18,6 +19,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
+    filter: grayscale(1) brightness(30%);
 }
 
 .slider-img {
@@ -57,10 +59,10 @@
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
-    color: white;
+    color: #40c9ff;
     position: absolute;
-    top: 50%;
-    left: -30%;
+    top: 40%;
+    left: -28%;
     transform: rotate(270deg);
     transition: 0.7s ease;
 }
@@ -100,7 +102,11 @@
 .slider-img.active {
     width: 766px !important;
     height: 750px !important;
-    
+
+}
+
+.slider-img.active img{
+    filter: none;
 }
 
 .slider-img.active h1 {
@@ -113,11 +119,11 @@
 }
 
 @media only screen and (max-width: 1020px) {
-    .slider-container{
+    .slider-container {
         margin-top: 30em;
         margin-bottom: 20em;
     }
-    
+
     .slider-images {
         flex-direction: column;
         margin-bottom: 10em;
@@ -160,6 +166,10 @@
         top: 0;
         left: 20%;
         font-size: 35px;
+    }
+    #img-title {
+        left: 45%;
+        top: 20%;
     }
 
 }
@@ -210,16 +220,15 @@
         left: 20%;
         font-size: 35px;
     }
-    
 
 }
 
 @media only screen and (max-width: 768px) {
-    .slider-container{
+    .slider-container {
         margin-top: 15em;
         margin-bottom: 10em;
     }
-    
+
     .slider-images {
         flex-direction: column;
         margin-bottom: 10em;
@@ -277,7 +286,7 @@
     }
 
     .slider-container {
-        margin-top: 15em;
+        margin-top: 18em;
         padding-bottom: 3em;
 
     }
@@ -324,5 +333,38 @@
     #img-title {
         left: 40%;
         top: 20%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .slider-images .slider-img:first-child,
+    .slider-images .slider-img:last-child {
+        width: 280px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(2),
+    .slider-images .slider-img:nth-child(5) {
+        width: 320px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(3),
+    .slider-images .slider-img:nth-child(4),
+    .slider-images .slider-img:nth-child(5) {
+        width: 340px;
+        height: 100px;
+    }
+
+    .slider-images .slider-img:nth-child(6) {
+        width: 320px;
+        height: 100px;
+
+    }
+
+    .slider-img.active {
+        width: 370px !important;
+        height: 450px !important;
     }
 }

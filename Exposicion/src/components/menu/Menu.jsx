@@ -18,7 +18,7 @@ function Menu(){
                 <ul className="menu-options">
                     <li><a href="/home#about">About</a></li>
                     <li><a href="/membership">Membership</a></li>
-                    <li><a href="/home#footer">About us</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
         </div>
