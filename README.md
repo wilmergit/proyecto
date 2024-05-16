@@ -12,9 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="./public/images/Heaven.png" alt="Logo" width="80" height="80">
-  </a>
+![LOGO](./Exposicion/public/images/Heaven.png)
 
 <h3 align="center">Heaven</h3>
 
@@ -57,7 +55,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Just the first version of a web project.
+Heaven is the perfect website to buy or sell games wherever you are
+at any time, offering the safest way to do it.
+
+![Screenshot](./Exposicion/public/images/SCR_HEAVEN.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,8 +106,9 @@ First install all the needed libraries using this command
 
 - [X] Layout
 - [X] Branding
-- [ ] Animations
-- [ ] More Options
+- [X] Animations
+- [X] RSS
+- [X] CRUD
 
 See the [open issues](https://github.com/wilmergit/proyecto/issues) for a full list of proposed features (and known issues).
 
